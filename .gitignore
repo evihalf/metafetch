@@ -1,0 +1,7 @@
+metafetch.suo
+metafetch/bin
+metafetch/obj
+metafetch-unittests/bin
+metafetch-unittests/obj
+metafetch-installer/Debug
+metafetch-installer/Release
