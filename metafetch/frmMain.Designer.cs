@@ -62,6 +62,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ttMain = new System.Windows.Forms.ToolTip(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.scMain)).BeginInit();
             this.scMain.Panel1.SuspendLayout();
             this.scMain.Panel2.SuspendLayout();
             this.scMain.SuspendLayout();
@@ -120,6 +121,7 @@
             this.chkAutoFetch.TabIndex = 3;
             this.chkAutoFetch.Text = "Auto Fetch";
             this.chkAutoFetch.UseVisualStyleBackColor = true;
+            this.chkAutoFetch.Visible = false;
             this.chkAutoFetch.CheckedChanged += new System.EventHandler(this.chkAutoFetch_CheckedChanged);
             // 
             // lvMetadataWithout
@@ -394,6 +396,7 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.scMain.Panel1.ResumeLayout(false);
             this.scMain.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.scMain)).EndInit();
             this.scMain.ResumeLayout(false);
             this.grpMetadataWithout.ResumeLayout(false);
             this.grpMetadataWithout.PerformLayout();
