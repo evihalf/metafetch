@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("metafetch-unittests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Evihalf")]
+[assembly: AssemblyCompany("Daniel Flahive")]
 [assembly: AssemblyProduct("metafetch-unittests")]
-[assembly: AssemblyCopyright("Copyright (C) Evihalf 2011")]
+[assembly: AssemblyCopyright("Copyright (C) Daniel Flahive 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
