@@ -126,13 +126,23 @@ namespace metafetch
             lvMetadataWithout.Items.Clear();
             lvMetadataWith.Items.Clear();
 
-            // TODO: Multithread this so the UI doesn't hang when loading.
-            foreach (string path in libraryPaths)
+            if (libraryPaths.Count() > 0)
             {
-                m_library.LoadLibraryMovies(path);
+                // TODO: Multithread this so the UI doesn't hang when loading.
+                foreach (string path in libraryPaths)
+                {
+                    m_library.LoadLibraryMovies(path);
+                }
+
+                lblStatus.Text = "";
+            }
+            else
+            {
+                // Display help when no libraries have been chosen.
+                lblStatus.Text = "No libraries added yet. Add them via File->Libraries.";
             }
 
-            lblStatus.Text = "";
+            
             UpdateUI();
         }
 
